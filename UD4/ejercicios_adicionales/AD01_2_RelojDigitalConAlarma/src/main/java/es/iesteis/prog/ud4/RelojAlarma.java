@@ -36,4 +36,8 @@ public class RelojAlarma {
     private boolean esHoraAlarma() {
         return getHora().equals(getAlarma());
     }
+
+    public void ponerEnHora(int hora, int minuto) {
+        reloj.setHora(hora, minuto);
+    }
 }

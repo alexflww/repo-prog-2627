@@ -32,7 +32,7 @@ public class VisorReloj
       
     /**
      * Constructor de objetos VisorReloj. Este constructor crea un nuevo
-     * reloj puesto en hora a lpartir de los parámetros pasaados 
+     * reloj puesto en hora a lpartir de los parámetros pasaados
      * al constructor
      */
 
@@ -45,18 +45,12 @@ public class VisorReloj
     }
 
     /**
-     * Este método debería llamarse una vez cada minuto - 
+     * Este método debería llamarse una vez cada minuto -
      * permite que el reloj avance un minuto
      */
 
-    public void emitirTic()
-    {
-        minutos.incrementar();
-        if (minutos.getValor() == 0) {  // se da la vuelta
-        
-            horas.incrementar();
-        }
-        actualizarReloj();
+    public void emitirTic() {
+
     }
 
     /**
@@ -85,7 +79,8 @@ public class VisorReloj
     {
         visorString = horas.getValorVisor() + ":" + minutos.getValorVisor();
     }
-    
-   
 
+
+    public void setHora(int hora, int minuto) {
+    }
 }
